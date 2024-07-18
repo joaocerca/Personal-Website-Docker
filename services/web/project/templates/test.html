@@ -1,0 +1,22 @@
+{% block content %}
+
+    <h1>Test</h1>
+    <form action="{{ url_for('database.addArtist') }}" method="POST">
+      
+        {{ form.csrf_token }}
+        {{ form.search.searched.label(class="form-label")}}
+        {{ form.search.searched(class="form-control") }}
+
+        {{ form.search.submit(class="form-control") }}
+
+        <input type="submit" name="submit-artist_search" value="Just submit About You subform">
+    
+        </input>
+        <input type="submit" name="submit-add-artist" value="Submit whole form">
+
+
+
+
+    </form>
+
+{% endblock %}

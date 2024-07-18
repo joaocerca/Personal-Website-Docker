@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script type="text/javascript" src="{{ header[0] | safe }}"></script>
+    <script type="text/javascript" src="{{ header[2] | safe }}"></script>
+    <script type="text/javascript" src="{{ header[3] | safe }}"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='dashboards.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="static/favicon/favicon.ico" />
+
+
+    <title>Music Database Detailed Dashboard</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 bd-example-row min-vh-100">
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="row align-items-center">
+                <h1>Music database dashboard</h1>
+
+            </div>
+            <div class="row g-2">
+                {{ div_countries | safe }}
+                    
+            </div>
+
+            <div class="row align-items-center">
+                {{ div_formats | safe }}
+                {{ div_rel_trx | safe }} 
+                {{ div_genres | safe }}
+            </div>
+
+            <div class="row g-2">
+                
+                {{ div_releases | safe }}
+            </div>
+
+            <div class="row g-2">
+                {{ div_full_plot | safe }}
+                {{ div_full_table | safe }}
+            </div>
+        </div>
+    </div>
+
+
+    {{ script_countries | safe }}
+    {{ script_formats | safe }}
+    {{ script_genres | safe }}
+    {{ script_releases | safe }}
+    {{ script_rel_trx | safe }}
+    {{ script_plot_table | safe }}
+
+
+</body>
+
+</html>

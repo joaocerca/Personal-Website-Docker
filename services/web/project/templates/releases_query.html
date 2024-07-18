@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<table id="releases" table class="table table-striped table-light" style="width: 100%;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Format</th>
+            <th>Year</th>
+            <th>Artist Id</th>
+            <th>Compilation</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Notes</th>
+            <th>Release Id</th>
+            <th>No of tracks</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for column in list%}
+        <tr>
+            <td>{{column[0]}}</td>
+            <td>{{column[1]}}</td>
+            <td>{{column[2]}}</td>
+            <td>{{column[3]}}</td>
+            <td>{% if column[4] == 'Y'%}
+                Yes
+                {% else %}
+                No
+                {% endif %}
+            </td>
+            <td>{% if column[5] == None %}
+                ---
+                {% else %}
+                {{column[5]}}
+                {% endif %}
+            </td>
+            <td>{{column[6]}}</td>
+            <td>{% if column[7] == None %}
+                ---
+                {% else %}
+                {{column[7]}}
+                {% endif %}
+            </td>
+            <td>{{column[8]}}</td>
+            <td>{{column[9]}}</td>
+            <td>{{column[10]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Format</th>
+            <th>Year</th>
+            <th>Artist Id</th>
+            <th>Compilation</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Notes</th>
+            <th>Release Id</th>
+            <th>No of tracks</th>
+            <th>Duration</th>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br></br>
+
+<a href="{{url_for('database.add_release')}}" class="btn btn-secondary btn-lg" role="button">Add Release</a>
+
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#releases').DataTable();
+    });
+</script>
+{% endblock %}

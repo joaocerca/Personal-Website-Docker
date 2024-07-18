@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <form action="{{ url_for('database.add_release') }}" method="POST">
+
+        {{ releaseForm.csrf_token }}
+        {{ releaseForm.hidden_tag() }}
+
+        <p>{{ releaseForm.artistName.label(class="form-label")}} {{ releaseForm.artistName(class="form-control") }} </p>
+
+        <p>{{ releaseForm.releaseName.label(class="form-label") }} {{ releaseForm.releaseName(class="form-control") }}</p>
+
+        <p>{{ releaseForm.releaseFormat.label(class="form-label") }} {{ releaseForm.releaseFormat(class="form-select") }}</p>
+
+        <p>{{ releaseForm.releaseYear.label(class="form-label") }} {{ releaseForm.releaseYear(class="form-control") }}</p>
+
+        <p>{{ releaseForm.isCompilation.label(class="form-label") }} {{ releaseForm.isCompilation(class="form-select")}}</p>
+
+        <p>{{ releaseForm.recordingType.label(class="form-label") }} {{ releaseForm.recordingType(class="form-control")}}</p>
+
+
+        <p>{{ releaseForm.releaseDesc.label(class="form-label") }} {{ releaseForm.releaseDesc(class="form-control") }}</p>
+
+
+        <p>{{ releaseForm.releaseNotes.label(class="form-label") }} {{ releaseForm.releaseNotes(class="form-control") }}</p>
+
+
+        <p>{{ releaseForm.releaseNoTracks.label(class="form-label") }} {{ releaseForm.releaseNoTracks(class="form-control") }}</p>
+
+        <p>{{ releaseForm.releaseLength.label(class="form-label") }} {{ releaseForm.releaseLength(class="form-control") }}</p>
+        
+        {{ releaseForm.submit(class="btn btn-outline-success") }}
+    </form>
+
+    {{ sql_query }}
+
+    {% for message in get_flashed_messages() %}
+    {{ message }}
+    {% endfor %}
+
+</div>
+
+{% endblock %}

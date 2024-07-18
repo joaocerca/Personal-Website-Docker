@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+<table id="artists" table class="table table-striped table-light" style="width: 100%;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Genre 1</th>
+            <th>Genre 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for column in list%}
+        <tr>
+            <td>{{column[0]}}</td>
+            <td>{{column[1]}}</td>
+            <td>{{column[2]}}</td>
+            <td>{{column[3]}}</td>
+            <td>{{column[4]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Genre 1</th>
+            <th>Genre 2</th>
+        </tr>
+    </tfoot>
+</table>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#artists').DataTable();
+    });
+</script>
+{% endblock %}

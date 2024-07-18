@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+<form action="{{ url_for('database.add_track') }}" method="POST">
+
+    {{ trackForm.csrf_token }}
+    {{ trackForm.hidden_tag() }}
+
+    <p>{{ trackForm.trackTitle.label(class="form-label") }} {{ trackForm.trackTitle(class="form-control") }} </p>
+
+    <p>{{ trackForm.artistName.label(class="form-label") }} {{ trackForm.artistName(class="form-control") }} </p>
+
+    <p>{{ trackForm.releaseName.label(class="form-label")}} {{ trackForm.releaseName(class="form-control") }} </p>
+    
+    <p>{{ trackForm.trackNo.label(class="form-label") }} {{ trackForm.trackNo(class="form-control") }}</p>    
+
+    <p>{{ trackForm.trackLength.label(class="form-label") }} {{ trackForm.trackLength(class="form-control") }}</p>
+
+  
+    {{ trackForm.submit(class="btn btn-outline-success") }}
+</form>
+
+{{ sql_query }}
+
+</div>
+
+{% endblock %}
