@@ -4,12 +4,11 @@ import pymysql
 import pymysql.cursors
 import logging
 import sshtunnel
-from sshtunnel import SSHTunnelForwarder
-import os
+from sshtunnel import SSHTunnelForwarder, create_logger
 from os import getenv, path, environ
 from dotenv import load_dotenv
 
-# load_dotenv("./.env")
+load_dotenv("./.env")
 
 ssh_host = environ.get("FLASK_MYSQL_DATABASE_HOST")
 ssh_username = environ.get("FLASK_SSH_USERNAME")
@@ -19,7 +18,7 @@ database_password = environ.get("FLASK_MYSQL_DATABASE_PASSWORD")
 database_name = environ.get("FLASK_MYSQL_DATABASE_DB1")
 localhost = environ.get("LOCALHOST")
 
-def open_ssh_tunnel(verbose=False):
+def open_ssh_tunnel(verbose=True):
     """Open an SSH tunnel and connect using a username and password.
     
     :param verbose: Set to True to show logging
@@ -35,10 +34,12 @@ def open_ssh_tunnel(verbose=False):
         ssh_username = ssh_username,
         ssh_password = ssh_password,
         remote_bind_address = ('127.0.0.1', 3306),
-        allow_agent=False
+        allow_agent=False,
+        logger=create_logger(loglevel=1)
     )
     
     tunnel.start()
+    print(tunnel.local_bind_port)
     
 
 def mysql_connect():

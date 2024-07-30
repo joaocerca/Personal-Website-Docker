@@ -1,0 +1,13 @@
+[Unit]
+Description=Daphne server for SITENAME
+
+[Service]
+Restart=on-failure
+User=USERNAME
+Environment=EMAIL_PASSWORD=SECRET SMTP_EMAL_PASSWORD=SMTP_SECRET
+WorkingDirectory=/home/USERNAME/sites/SITENAME/source
+ExecStart=/home/USERNAME/.local/bin/uvicorn PROJECT_DIR_NAME.asgi:application --workers WORKERS --host 0.0.0.0 --port 8000 --use-colors
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Daphne server for SITENAME
+
+[Service]
+Restart=on-failure
+User=USERNAME
+Environment=EMAIL_PASSWORD=SECRET SMTP_EMAL_PASSWORD=SMTP_SECRET
+WorkingDirectory=/home/USERNAME/sites/SITENAME/source
+ExecStart=/home/USERNAME/.local/bin/daphne -u /tmp/SITENAME.socket PROJECT_DIR_NAME.asgi-test:application
+
+[Install]
+WantedBy=multi-user.target

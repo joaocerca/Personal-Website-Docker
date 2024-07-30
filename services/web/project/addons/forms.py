@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, PasswordField, BooleanField, FormField, SelectField, SelectMultipleField, IntegerField, DecimalField, DateTimeField
+from wtforms import StringField, SubmitField, PasswordField, BooleanField, FormField, SelectField, SelectMultipleField, IntegerField, DecimalField, DateTimeField, TextAreaField
 from wtforms.validators import DataRequired, Length, NumberRange, InputRequired, Optional
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -59,3 +59,8 @@ class User(dbase.Model, UserMixin):
     #     """Create hashed password."""
     #     self.password = generate_password_hash(password, method='sha256')
 
+class DiscogsForm(FlaskForm):
+    # barcodeRelease = StringField("Barcode of the Release", validators=[InputRequired(), Length(max=40)])
+    barcodeRelease = TextAreaField("Barcode of the Release", validators=[InputRequired(), Length(max=40)])
+    countryRelease = StringField("Country of the Release", validators=[Length(max=30)])
+    submit = SubmitField("Submit")
