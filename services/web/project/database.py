@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, flash, redirect, url_for
+from flask import Blueprint, render_template, flash, redirect, url_for, current_app, request, jsonify
 from flask_login import UserMixin, login_required
 from .addons.forms import ArtistForm, ReleaseForm, TrackForm
 from .addons import dbconnection as dbconnect
@@ -12,9 +12,11 @@ database = Blueprint('database', __name__, template_folder="templates")
 
 dbconnect.open_ssh_tunnel()
 
-@database.route("/backend/database/tblartist")
+@database.route("/backend/database/tblArtist")
 @login_required
 def db_artist_show():
+    
+    current_app.logger.info("Show list of artists.")
 
     cnx = dbconnect.mysql_connect()
 
@@ -22,13 +24,15 @@ def db_artist_show():
     
     dbconnect.mysql_disconnect(cnx)
 
-    return render_template('artists_query.html', list=result)
+    return render_template('query_artists.html', list=result)
     
 
 
-@database.route("/backend/database/tblrelease")
+@database.route("/backend/database/tblRelease")
 @login_required
 def db_release_show():
+
+    current_app.logger.info("Show list of releases.")
 
     cnx = dbconnect.mysql_connect()
 
@@ -36,12 +40,14 @@ def db_release_show():
     
     dbconnect.mysql_disconnect(cnx)
 
-    return render_template('releases_query.html', list=result)
+    return render_template('query_releases.html', list=result)
    
 
-@database.route("/backend/database/tbltrack")
+@database.route("/backend/database/tblTrack")
 @login_required
 def db_track_show():
+
+    current_app.logger.info("Show list of tracks.")
 
     cnx = dbconnect.mysql_connect()
 
@@ -49,7 +55,7 @@ def db_track_show():
 
     dbconnect.mysql_disconnect(cnx)
 
-    return render_template('tracks_query.html', list=result)
+    return render_template('query_tracks.html', list=result)
     
 
 
@@ -57,31 +63,50 @@ def db_track_show():
 @login_required
 def add_artist():
 
+    current_app.logger.info("Adding new artist.")
+
     artistForm = ArtistForm()
 
     cnx = dbconnect.mysql_connect()
 
-    if artistForm.validate_on_submit():
-        artistName = artistForm.artistName.data
-        artistCountry = artistForm.artistCountry.data
+    try:
 
-        sql_query = f'INSERT INTO tbl_artist (artistname, artistcountry) VALUES("{artistName}","{artistCountry}")'
+        if artistForm.validate_on_submit():
 
-        try:
-            dbconnect.run_query(sql_query, 1, cnx)
-            flash(f'{artistName} added to the DB')
-        except IntegrityError:
-            flash(f'{artistName} is already in the DB!')
+            artistName = artistForm.artistName.data
+            artistCountry = artistForm.artistCountry.data
 
-    dbconnect.mysql_disconnect(cnx)
+            current_app.logger.info(f'Artist added to the library: {artistName}')
 
-    return render_template("add_artist.html", artistForm=artistForm)   
 
+            sql_query = f'INSERT INTO tbl_artist (artistname, artistcountry) VALUES("{artistName}","{artistCountry}")'
+
+            try:
+                dbconnect.run_query(sql_query, 1, cnx)
+                flash(f'{artistName} added to the DB')
+                current_app.logger.info("Artist added to the DB.")
+
+            except IntegrityError:
+                current_app.logger.warning("Artist exists in the database.")
+                flash(f'{artistName} is already in the DB!')
+    
+        dbconnect.mysql_disconnect(cnx)
+
+        return render_template("add_artist.html", artistForm=artistForm)   
+        # else:
+        #     current_app.logger.warning(f'Something went wrong. {artistName} was not added!!!!')
+    except Exception as e:
+        return jsonify({"error": "An error occurred"}), 500
+
+
+    
 
 
 @database.route("/backend/database/addRelease", methods=['GET','POST'])
 @login_required
 def add_release():
+
+    current_app.logger.info("Adding new release.")
 
     releaseForm = ReleaseForm()
         
@@ -102,7 +127,8 @@ def add_release():
 
         sql_query = f'INSERT INTO tbl_release VALUES ("{releaseName}","{releaseFormat}","{releaseYear}",(SELECT artistid FROM tbl_artist WHERE artistname = "{artistName}"),"{isCompilation}","{releaseDesc}","{recordingType}","{releaseNotes}",CONCAT(releaseformat, LEFT(artistid,4), LEFT(recordingtype,1), FLOOR(1 + (RAND() * 9999)), iscompilation),"{releaseNoTracks}",CONVERT("{releaseLength}", TIME));'
         dbconnect.run_query(sql_query, 1, cnx)
-                    
+        
+        current_app.logger.info("Releases added to the DB.")
         flash(f'{releaseName} added to the DB')
 
         return redirect(url_for('database.add_release'))
@@ -122,11 +148,11 @@ def add_track():
      
     if trackForm.validate_on_submit():
             
-        artistName = trackForm.artistName.data
-        releaseName = trackForm.releaseName.data
-        trackTitle = trackForm.trackTitle.data
-        trackNo = trackForm.trackNo.data
-        trackLength = trackForm.trackLength.data       
+        artistName = trackForm.artistName['artistName']
+        releaseName = trackForm.releaseName['releaseName']
+        trackTitle = trackForm.trackTitle['trackTitle']
+        trackNo = trackForm.trackNo['trackNo']
+        trackLength = trackForm.trackLength['trackLength']       
 
 
         print(artistName, releaseName, trackTitle, trackNo, trackLength)            

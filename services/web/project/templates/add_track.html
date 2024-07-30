@@ -9,16 +9,25 @@
     {{ trackForm.csrf_token }}
     {{ trackForm.hidden_tag() }}
 
-    <p>{{ trackForm.trackTitle.label(class="form-label") }} {{ trackForm.trackTitle(class="form-control") }} </p>
-
-    <p>{{ trackForm.artistName.label(class="form-label") }} {{ trackForm.artistName(class="form-control") }} </p>
-
-    <p>{{ trackForm.releaseName.label(class="form-label")}} {{ trackForm.releaseName(class="form-control") }} </p>
-    
-    <p>{{ trackForm.trackNo.label(class="form-label") }} {{ trackForm.trackNo(class="form-control") }}</p>    
-
-    <p>{{ trackForm.trackLength.label(class="form-label") }} {{ trackForm.trackLength(class="form-control") }}</p>
-
+    <div class="input-goup">
+        <br>
+        <span class="input-group-text">Track Title</span>
+        <input type="text" class="form-control" placeholder="Track Title">{{ trackForm.trackTitle['trackTitle'] }}
+        <br>
+        <span class="input-group-text">Artist Name</span>
+        <input type="text" class="form-control" placeholder="Artist Name">{{ trackForm.artistName['artistName'] }}
+        <br>
+        <span class="input-group-text">Release Name</span>
+        <input type="text" class="form-control" placeholder="Release Name">{{ trackForm.releaseName['releaseName'] }}
+        <br>
+        <span class="input-group-text">Track Number</span>
+        <input type="text" class="form-control" placeholder="Track Number">{{ trackForm.trackNo['trackNo'] }}
+        <br>
+        <span class="input-group-text">Track Duration</span>
+        <input type="text" class="form-control" placeholder="Track Duration">{{ trackForm.trackLength['trackLength'] }}
+        <br>
+        <br>
+    </div>
   
     {{ trackForm.submit(class="btn btn-outline-success") }}
 </form>
@@ -28,3 +37,7 @@
 </div>
 
 {% endblock %}
+
+
+
+  

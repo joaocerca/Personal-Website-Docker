@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <form action="{{ url_for('discogs.search_query') }}" method="POST">
+
+        {{ discogsForm.csrf_token }}
+        {{ discogsForm.hidden_tag() }}
+
+
+        
+        <br>
+        {{ discogsForm.barcodeRelease.label(class="form-label") }}
+        {{ discogsForm.barcodeRelease(class="form-control") }}
+        <br>
+        {{ discogsForm.countryRelease.label(class="form-label") }}
+        {{ discogsForm.countryRelease(class="form-control") }}
+        
+        
+        <br/>
+        <br/>
+        {{ discogsForm.submit(class="btn btn-outline-success") }} 
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    {% for item in table %}
+        {{ item|safe }}
+    {% endfor %}
+
+    
+
+</div>
+
+
+{% endblock %}
+
+
+

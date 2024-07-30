@@ -4,21 +4,21 @@
 
 <div class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-<form action="{{ url_for('database.add_artist') }}" method="POST">
+    <form action="{{ url_for('database.add_artist') }}" method="POST">
 
-    {{ artistForm.csrf_token }}
-    {{ artistForm.hidden_tag() }}
-
-    {{ artistForm.artistName.label(class="form-label")}} 
-    {{ artistForm.artistName(class="form-control") }}
-    <br/>
-    <br/>
-    {{ artistForm.artistCountry.label(class="form-label") }} {# 'class=' comes from bootstrap #}
-    {{ artistForm.artistCountry(class="form-control-sm") }}
-    <br/>
-    <br/>
-    {{ artistForm.submit(class="btn btn-outline-success") }}
-</form>
+        {{ artistForm.csrf_token }}
+        {{ artistForm.hidden_tag() }}
+    
+        {{ artistForm.artistName.label(class="form-label")}} 
+        {{ artistForm.artistName(class="form-control") }}
+        <br/>
+        <br/>
+        {{ artistForm.artistCountry.label(class="form-label") }} {# 'class=' comes from bootstrap #}
+        {{ artistForm.artistCountry(class="form-control") }}
+        <br/>
+        <br/>
+        {{ artistForm.submit(class="btn btn-outline-success") }}
+    </form>
 
 
     {% for message in get_flashed_messages() %}

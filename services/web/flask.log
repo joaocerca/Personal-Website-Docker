@@ -1,0 +1,258 @@
+[29 July 2024 23:07:41 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:16:38 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:24:58 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:28:36 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:28:50 CEST] INFO || database >>>>>>> Show list of releases.
+[29 July 2024 23:30:32 CEST] INFO || _internal >>>>>>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[29 July 2024 23:30:32 CEST] INFO || _internal >>>>>>> [33mPress CTRL+C to quit[0m
+[29 July 2024 23:30:32 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:30:39 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:30:39 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:30:52 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:30:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:52] "GET / HTTP/1.1" 200 -
+[29 July 2024 23:30:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:52] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:52] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[32mGET /backend HTTP/1.1[0m" 302 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "GET /login?next=/backend HTTP/1.1" 200 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[33mGET /static/assets/js/color-modes.js HTTP/1.1[0m" 404 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[36mGET /static/assets/sign-in.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[36mGET /static/assets/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[36mGET /static/assets/brand/bootstrap-logo.svg HTTP/1.1[0m" 304 -
+[29 July 2024 23:30:55 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:30:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "GET /backend HTTP/1.1" 200 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[36mGET /static/assets/cards.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:31:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:08] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:31:26 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:26] "[35m[1mGET /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:31:34 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:34] "[35m[1mGET /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:31:34 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:34] "GET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[29 July 2024 23:31:34 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:34] "GET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[29 July 2024 23:31:34 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:34] "GET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[29 July 2024 23:31:34 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:31:34] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:17 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:33:17 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:33:23 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:23] "[35m[1mGET /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:23] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:23] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:23] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:23 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:23] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:36 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:33:36 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:33:43 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:43 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:43] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:57 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:33:57 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:57] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:33:57 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:57] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:57 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:57] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:57 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:57] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:33:57 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:33:57] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:37:14 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:37:15 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:37:21 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:37:21 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:39:06 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:39:07 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:39:13 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:39:13 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:39:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:14] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:39:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:14] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:14] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:14] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:14] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:24 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:39:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:24] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:39:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:24] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:24] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:24] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:39:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:39:24] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:40:52 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:40:52 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:40:58 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:40:58 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:40:58] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:41:08 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:41:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:41:08] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:41:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:41:08] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:41:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:41:08] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:41:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:41:08] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:41:08 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:41:08] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:41:36 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[29 July 2024 23:41:36 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:45:44 CEST] INFO || _internal >>>>>>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[29 July 2024 23:45:44 CEST] INFO || _internal >>>>>>> [33mPress CTRL+C to quit[0m
+[29 July 2024 23:45:44 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[29 July 2024 23:45:50 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[29 July 2024 23:45:50 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 784-920-200
+[29 July 2024 23:45:50 CEST] INFO || main >>>>>>> First contact
+[29 July 2024 23:45:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:50] "GET / HTTP/1.1" 200 -
+[29 July 2024 23:45:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:50] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:50] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "GET /backend HTTP/1.1" 200 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:52 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:52] "[36mGET /static/assets/cards.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:56 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:56] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:45:56 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:56] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:56 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:56] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:56 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:56] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:45:56 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:45:56] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:46:08 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:46:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:46:09] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:46:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:46:09] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:46:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:46:09] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:46:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:46:09] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:46:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:46:09] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:14 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:49:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:15] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:49:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:15] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:15] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:15] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:15] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:29 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:49:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:30] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:49:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:30] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:30] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:30] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:49:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:49:30] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:50:08 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[29 July 2024 23:50:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:50:09] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:50:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:50:09] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:50:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:50:09] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:50:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:50:09] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:50:09 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:50:09] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:12 CEST] INFO || discogs >>>>>>> Barcode entered: 602455689313
+[29 July 2024 23:52:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:14] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[29 July 2024 23:52:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:14] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:14] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:14] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:14 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:14] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:21 CEST] INFO || discogs >>>>>>> Barcode entered: 602455689313
+[29 July 2024 23:52:21 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:21] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:52:21 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:21] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:21 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:21] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:21 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:21] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:52:21 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:52:21] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:53:15 CEST] INFO || discogs >>>>>>> Barcode entered: 602455689313
+[29 July 2024 23:53:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:53:15] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[29 July 2024 23:53:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:53:15] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[29 July 2024 23:53:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:53:15] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[29 July 2024 23:53:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:53:15] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[29 July 2024 23:53:15 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [29/Jul/2024 23:53:15] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[30 July 2024 20:55:07 CEST] INFO || _internal >>>>>>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[30 July 2024 20:55:07 CEST] INFO || _internal >>>>>>> [33mPress CTRL+C to quit[0m
+[30 July 2024 20:55:07 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[30 July 2024 20:55:13 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[30 July 2024 20:55:13 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 382-796-236
+[30 July 2024 21:12:45 CEST] INFO || main >>>>>>> First contact
+[30 July 2024 21:12:45 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:45] "GET / HTTP/1.1" 200 -
+[30 July 2024 21:12:45 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:45] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:45 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:45] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:45 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[32mGET /backend HTTP/1.1[0m" 302 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "GET /login?next=/backend HTTP/1.1" 200 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[33mGET /static/assets/js/color-modes.js HTTP/1.1[0m" 404 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[36mGET /static/assets/sign-in.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[36mGET /static/assets/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[36mGET /static/assets/brand/bootstrap-logo.svg HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:50 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "GET /backend HTTP/1.1" 200 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[36mGET /static/assets/cards.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:12:59 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:12:59] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:04 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:04] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:13:04 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:04] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:04 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:04] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:04 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:04] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:04 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:04] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:29 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 21:13:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:30] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:13:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:30] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:30] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:30] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:13:30 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:13:30] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:14:23 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 21:14:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:14:24] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:14:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:14:24] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:14:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:14:24] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:14:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:14:24] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:14:24 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:14:24] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:16:57 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[30 July 2024 21:16:57 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[30 July 2024 21:17:03 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[30 July 2024 21:17:03 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 382-796-236
+[30 July 2024 21:18:15 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 21:18:17 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:18:17] "[35m[1mPOST /backend/searchDiscogs HTTP/1.1[0m" 500 -
+[30 July 2024 21:18:17 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:18:17] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[30 July 2024 21:18:17 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:18:17] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:18:17 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:18:17] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[30 July 2024 21:18:17 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:18:17] "[36mGET /backend/searchDiscogs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:02 CEST] INFO || _internal >>>>>>>  * Detected change in '/home/joaocerca/Documents/Education/Git Projects/Personal-Website-Docker/services/web/project/discogs.py', reloading
+[30 July 2024 21:19:02 CEST] INFO || _internal >>>>>>>  * Restarting with stat
+[30 July 2024 21:19:08 CEST] WARNING || _internal >>>>>>>  * Debugger is active!
+[30 July 2024 21:19:08 CEST] INFO || _internal >>>>>>>  * Debugger PIN: 382-796-236
+[30 July 2024 21:19:35 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:35] "GET /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:19:35 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:35] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:35 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:35] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:35 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:35] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:35 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:35] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:46 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 21:19:47 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:47] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:19:47 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:47] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:47 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:47] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:47 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:47] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:19:47 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:19:47] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:21:12 CEST] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 21:21:13 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:21:13] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:21:13 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:21:13] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:21:13 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:21:13] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:21:13 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:21:13] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:21:13 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:21:13] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 21:24:41 CEST] INFO || discogs >>>>>>> Barcode entered: 5050294172025
+[30 July 2024 21:24:42 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:24:42] "POST /backend/searchDiscogs HTTP/1.1" 200 -
+[30 July 2024 21:24:42 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:24:42] "[36mGET /static/base.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:24:42 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:24:42] "[36mGET /static/sidebar.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:24:42 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:24:42] "[36mGET /static/assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[30 July 2024 21:24:42 CEST] INFO || _internal >>>>>>> 127.0.0.1 - - [30/Jul/2024 21:24:42] "[36mGET /static/profile.jpg HTTP/1.1[0m" 304 -
+[30 July 2024 19:55:21 UTC] INFO || main >>>>>>> First contact
+[30 July 2024 19:55:41 UTC] INFO || main >>>>>>> First contact
+[30 July 2024 19:56:26 UTC] INFO || discogs >>>>>>> Barcode entered: 5050294172025
+[30 July 2024 19:56:55 UTC] INFO || main >>>>>>> First contact
+[30 July 2024 19:59:24 UTC] INFO || discogs >>>>>>> Barcode entered: 4049774001642
+[30 July 2024 19:59:30 UTC] INFO || discogs >>>>>>> Barcode entered: 4049774001642
+[30 July 2024 20:00:09 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:12:02 UTC] INFO || main >>>>>>> First contact
+[30 July 2024 20:12:22 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:22:01 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:26:59 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:47:14 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:47:54 UTC] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 20:48:02 UTC] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 20:48:20 UTC] INFO || discogs >>>>>>> Barcode entered: 600445023727
+[30 July 2024 20:48:57 UTC] INFO || discogs >>>>>>> Barcode entered: 5029271002006
+[30 July 2024 20:51:32 UTC] INFO || discogs >>>>>>> Barcode entered: 5029271002006

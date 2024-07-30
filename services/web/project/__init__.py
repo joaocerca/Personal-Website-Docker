@@ -4,6 +4,7 @@ from flask_login import LoginManager
 from dotenv import load_dotenv
 from os import environ, path
 
+
 # init SQLAlchemy so we can use it later in our models
 dbase = SQLAlchemy()
 
@@ -13,11 +14,13 @@ load_dotenv(path.join(basedir,'.env'))
 FLASK_APP = environ.get("FLASK_APP")
 FLASK_DEBUG = environ.get("FLASK_DEBUG")
 
-# def create_app():
+
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = environ.get("FLASK_SECRET_KEY")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users_db.sqlite'
+app.config['PROPAGATE_EXCEPTIONS'] = True
+
 
 dbase.init_app(app)
 
@@ -51,5 +54,6 @@ app.register_blueprint(dashboard_blueprint)
 from .dashboards.musicdashboardgen import musicdashboardgen as dashboard_blueprint
 app.register_blueprint(dashboard_blueprint)
 
+from .discogs import discogs as discogs_blueprint
+app.register_blueprint(discogs_blueprint)
 
-    # return app
