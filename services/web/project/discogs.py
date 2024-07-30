@@ -36,7 +36,8 @@ def search_query():
         print(barcodeRelease + " and " + countryRelease)
         resource_url = getRelease(response)
         trackList_df = getTracklist(resource_url)
-
+        
+    discogsForm.countryRelease.data = ''
 
     # return redirect(url_for(f'/backend/resultDiscogs/barcode={barcodeRelease}&country={countryRelease}'))
     # return redirect(url_for())
@@ -72,7 +73,7 @@ def getRelease(results):
     print(results[0]['year'])
     print(results[0]['format'])
     print(results[0]['title'])
-    
+
     return resource_url
 
 
